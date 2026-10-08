@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript</title>
+    <style>
+        header { background-color: #f0f0f0; padding: 40px; text-align: center; border-bottom: 1px solid #ccc; }
+        nav { border-bottom: 1px solid #ccc; padding: 10px; }
+        main { padding: 20px; min-height: 300px; }
+        footer { border-top: 1px solid #ccc; padding: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nombre del Curso: JavaScript Práctico</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a> | 
+        <a href="#modificar-html">Modificar contenido HTML</a> | 
+        <a href="#modificar-css">Modificar estilos CSS</a> | 
+        <a href="#modificar-atributos">Modificar atributos HTML</a>
+    </nav>
+    <main id="home">
+        <p>En este curso aprenderás a utilizar JavaScript para interactuar dinámicamente con los elementos HTML de una página web.</p>
+	<section id="modificar-html">
+        <h2>Modificar contenido HTML</h2>
+        <p id="demo-html">JavaScript puede cambiar el contenido HTML.</p>
+        <button type="button" onclick="document.getElementById('demo-html').innerHTML = '¡Contenido modificado con JS!'">Pruébalo</button>
+    	</section>
+	<section id="modificar-atributos">
+        <h2>Modificar atributos HTML</h2>
+        <p>JavaScript puede cambiar el valor de un atributo HTML (como la fuente de una imagen).</p>
+        <img id="miImagen" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+        <br><br>
+        <button type="button" onclick="document.getElementById('miImagen').src='https://www.w3schools.com/js/pic_bulbon.gif'">Enciende la luz</button>
+        <button type="button" onclick="document.getElementById('miImagen').src='https://www.w3schools.com/js/pic_bulboff.gif'">Apaga la luz</button>
+    	</section>
+	<section id="modificar-css">
+        <h2>Modificar estilos CSS</h2>
+        <p id="demo-css">JavaScript puede cambiar los estilos de un elemento HTML.</p>
+        <button type="button" onclick="
+            document.getElementById('demo-css').style.fontSize = '35px';
+            document.getElementById('demo-css').style.color = 'red';
+        ">¡Cambia el estilo!</button>
+    </section>
+    </main>
+    <footer>
+        <p>Footer del sitio</p>
+    </footer>
+</body>
+</html>
