@@ -27,6 +27,14 @@
         <p id="demo-html">JavaScript puede cambiar el contenido HTML.</p>
         <button type="button" onclick="document.getElementById('demo-html').innerHTML = '¡Contenido modificado con JS!'">Pruébalo</button>
     	</section>
+	<section id="modificar-atributos">
+        <h2>Modificar atributos HTML</h2>
+        <p>JavaScript puede cambiar el valor de un atributo HTML (como la fuente de una imagen).</p>
+        <img id="miImagen" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+        <br><br>
+        <button type="button" onclick="document.getElementById('miImagen').src='https://www.w3schools.com/js/pic_bulbon.gif'">Enciende la luz</button>
+        <button type="button" onclick="document.getElementById('miImagen').src='https://www.w3schools.com/js/pic_bulboff.gif'">Apaga la luz</button>
+    	</section>
     </main>
     <footer>
         <p>Footer del sitio</p>
